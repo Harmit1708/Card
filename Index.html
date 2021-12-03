@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <!-- <link rel="stylesheet" href="/Css/style.css" type="text/css"> -->
+    <style>
+        /* BODY PART */
+        body{
+            font-family: monospace;
+            font-size:25px;
+        }
+        div{
+            display: block;
+            text-align: center;
+            padding-left: 120px;
+            padding-right:120px;
+        }
+        form{
+            margin-top: 180px;
+            border: 4px solid black;
+            display: inline-block;
+            padding-bottom: 10px;
+            
+        }
+
+        /* HEADINGS */
+        h3{
+            background-color:red;
+            color: white;;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        /* TEXTBOX */
+        input{
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: 1px solid black;
+        }
+        #fname {
+            display: inline-block;
+            width: 30%;
+            float: left;
+        }
+        #lname{
+            width: 30%;
+        }
+        #address{
+            width: 100%;
+            display: inline-block;
+        }
+        #city{
+
+            width:120px;
+            float: left;
+
+        }
+        #state{
+            width:180px;
+            display: inline-block;  
+        }
+        #zip{
+            width:100px;
+            display: inline-block;
+        }
+
+        /* LABELS */
+        .label1{
+            /* display: block; */
+            float: left;
+        }
+
+        .address{
+            display: inline-block;
+            float: left;
+        }
+        .city1{
+            /* display: block; */
+            float: left;
+        }
+        .state1{
+            /* margin-left: 100px; */
+        }
+        .zip1{
+            margin-left: 93px;
+        }
+
+        /* LABELS WITH TEXTBOX */
+        #Checkbox1{
+            display: inline-block;
+            float: left;
+        }
+        #about{
+            display: inline-block;
+            float:left;
+        }
+        .check{
+            display: inline-block;
+            float: left;
+        }
+        .check1{
+            display: inline-block;
+            float: left;
+
+        }
+        .check2{
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+<body>    
+    <div>
+        <form action="https://www.github.com/" method="GET">
+            <div>
+                <h3>&nbsp;&nbsp;&nbsp;Yes! I want to subscribe to Mag-O-Zine&nbsp;&nbsp;&nbsp;</h3>
+            </div>
+
+            <div>
+                <input type="text" id="fname" name="fname" value=""><input type="text" id="lname" name="lname" value=""><br>
+            </div>
+            <div>
+                <label class="label1" for="fname">First Name:</label><label class="label2" for="lname">Last Name:</label><br><br>
+            </div>
+
+            <div>
+                <input type="address" id="address" name="address" value=""><br>&nbsp;
+            </div>
+
+            <div>
+                <label class="address" for="address">Address</label><br><br>
+            </div>
+            <div>
+                <input id="city" type="text">&nbsp;<input id="state" type="text">&nbsp;<input id="zip" type="text"><br>       
+                <label class="city1" for="city">City</label><label class="state" for="state1">&nbsp;State</label><label class="zip1" for="zip">&nbsp;&nbsp;&nbsp;Zip</label><br><br>
+
+                <b><label id="Checkbox1" for="checkbox">Subscribe for:
+                <input type="checkbox" value="1" name="check[1][]">1 year($19.95)<input type="checkbox" value="1" name="check[1][]">2 years ($35.00)</b></label><br><br>
+
+
+                <label id="about"for=""><b>Send me more information about:</b></label><br><br>
+                <label class="check" for=""><input  type="checkbox">Computer-Zine</label><br><br>
+                <label class="check1" for=""><input type="checkbox">Flashing-Zine</label><br><br>
+                <label class="check2" for=""><input  type="checkbox">Cat-O-Zine</label>
+            </div>
+         </form>
+    </div>
+</body>
+<script src="/JavaScript/Script.js"></script>
+</html>
